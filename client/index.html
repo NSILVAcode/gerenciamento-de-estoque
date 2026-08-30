@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Estoque</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Gerenciamento de estoques</h1>
+        </div>
+
+        <nav class="botoes">
+            <button id="btn-produtos" class="botao" onclick="mostrarProdutos()">Produtos</button>
+            <button id="btn-recibos" class= "botao" onclick="mostrarRecibos()">Recibos</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="produtos">
+            <h2>Lista de produtos</h2>
+            <form id="form-produto"></form>
+        <div class="campo-grupo">
+         <label for="nome-produto">Nome Produto:</label>
+            <input type="text" id="nome-produto" name="nome_produto" required placeholder="Ex: Teclado mecanico">  
+        </div>
+
+        <div class="campo-grupo">
+            <label for="quantidade-produto">Quantidade:</label>
+            <input type="number" id="quantidade-produto" name="quantidade_produto" required min= "0">
+        </div>
+        </section>
+    </main>
+</body>
+</html>
